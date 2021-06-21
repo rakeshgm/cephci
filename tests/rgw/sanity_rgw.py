@@ -52,7 +52,7 @@ def run(ceph_cluster, **kw):
     test_folder = "rgw-tests"
     test_folder_path = f"~/{test_folder}"
     git_url = "https://github.com/red-hat-storage/ceph-qe-scripts.git"
-    git_clone = f"git clone {git_url} -b master"
+    git_clone = f"git clone {git_url} -b rgw_format_code"
     rgw_node.exec_command(
         cmd=f"sudo rm -rf {test_folder}"
         + f" && mkdir {test_folder}"
